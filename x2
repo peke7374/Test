@@ -1202,7 +1202,7 @@ function library:init()
             local objs = indicator.objects;
 
             objs.background = utility:Draw('Square', {
-                Size = newUDim2(0, 200, 0, 16);
+                Size = newUDim2(0, 270, 0, 16);
                 Position = indicator.position;
                 ThemeColor = 'Background';
                 ZIndex = z;
