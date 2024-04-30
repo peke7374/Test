@@ -1202,7 +1202,7 @@ function library:init()
             local objs = indicator.objects;
 
             objs.background = utility:Draw('Square', {
-                Size = newUDim2(0, 270, 0, 16);
+                Size = newUDim2(0, 200, 0, 16);
                 Position = indicator.position;
                 ThemeColor = 'Background';
                 ZIndex = z;
@@ -1247,7 +1247,7 @@ function library:init()
         --------------------
 
         function indicator:Update()
-            local xSize  = 125
+            local xSize  = 180
             local yPos  = 0
             table.sort(self.values, function(a,b)
                 return a.order < b.order;
