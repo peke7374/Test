@@ -703,9 +703,8 @@ do
                 end
 
                 if drawing.Class == 'Square' or drawing.Class == 'Image' then
-    			drawing.Object.Size = typeof(drawing.Size) == 'Vector2' and drawing.Size or
-                          typeof(drawing.Size) == 'UDim2' and drawing.Size or
-                          utility:UDim2ToVector2(drawing.Size, parentSize)
+                         print(typeof(drawing.Size))
+    			drawing.Object.Size = drawing.Size
 		end
 
                 if drawing.Class == 'Square' or drawing.Class == 'Image' or drawing.Class == 'Circle' or drawing.Class == 'Text' then
