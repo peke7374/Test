@@ -703,8 +703,10 @@ do
                 end
 
                 if drawing.Class == 'Square' or drawing.Class == 'Image' then
-                    drawing.Object.Size = typeof(drawing.Size) == 'Vector2' and drawing.Size or typeof(drawing.Size) == 'UDim2' and utility:UDim2ToVector2(drawing.Size,parentSize)
-                end
+    			drawing.Object.Size = typeof(drawing.Size) == 'Vector2' and drawing.Size or
+                          typeof(drawing.Size) == 'UDim2' and drawing.Size or
+                          utility:UDim2ToVector2(drawing.Size, parentSize)
+		end
 
                 if drawing.Class == 'Square' or drawing.Class == 'Image' or drawing.Class == 'Circle' or drawing.Class == 'Text' then
                     drawing.Object.Position = parentPos + (typeof(drawing.Position) == 'Vector2' and drawing.Position or utility:UDim2ToVector2(drawing.Position,parentSize))
