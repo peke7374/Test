@@ -917,7 +917,7 @@ function Hide()
 end
 function Unhide()
 	Debounce = true
-	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+	Main.Position = UDim2.new(0.5, 0, 0.67, 0)
 	Main.Visible = true
 	TweenService:Create(Main, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 500, 0, 475)}):Play()
 	TweenService:Create(Main.Topbar, TweenInfo.new(0.5, Enum.EasingStyle.Quint), {Size = UDim2.new(0, 500, 0, 45)}):Play()
@@ -3631,8 +3631,6 @@ function ArrayFieldLibrary:LoadConfiguration()
 		end)
 	end
 end
-
-ArrayField.Main.Position = UDim2.new(ArrayField.Main.Position.X.Scale, ArrayField.Main.Position.X.Offset, ArrayField.Main.Position.Y.Scale * (-0.2), ArrayField.Main.Position.Y.Offset - 40)
 
 task.delay(9, ArrayFieldLibrary.LoadConfiguration, ArrayFieldLibrary)
 local ArrayField = ArrayFieldLibrary
