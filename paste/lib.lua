@@ -3632,7 +3632,7 @@ function ArrayFieldLibrary:LoadConfiguration()
 	end
 end
 
-ArrayField.Main.Position = UDim2.new(ArrayField.Main.Position.X.Scale, ArrayField.Main.Position.X.Offset, ArrayField.Main.Position.Y.Scale * 0.2, ArrayField.Main.Position.Y.Offset + 40)
+ArrayField.Main.Position = UDim2.new(ArrayField.Main.Position.X.Scale, ArrayField.Main.Position.X.Offset, ArrayField.Main.Position.Y.Scale - 0.2, ArrayField.Main.Position.Y.Offset - 40)
 
 task.delay(9, ArrayFieldLibrary.LoadConfiguration, ArrayFieldLibrary)
 local ArrayField = ArrayFieldLibrary
