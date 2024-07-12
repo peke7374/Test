@@ -200,7 +200,7 @@ function ChangeTheme(ThemeName)
 	ArrayField.Main.Topbar.BackgroundColor3 = SelectedTheme.Topbar
 	ArrayField.Main.Topbar.CornerRepair.BackgroundColor3 = SelectedTheme.Topbar
 	ArrayField.Main.Shadow.Image.ImageColor3 = SelectedTheme.Shadow
-	ArrayField.Main.Topbar.Position = UDim2.new(ArrayField.Main.Topbar.Position.X.Scale, ArrayField.Main.Topbar.Position.X.Offset, ArrayField.Main.Topbar.Position.Y.Scale, ArrayField.Main.Topbar.Position.Y.Offset - 20)
+	ArrayField.Main.Topbar.Position = UDim2.new(ArrayField.Main.Topbar.Position.X.Scale, ArrayField.Main.Topbar.Position.X.Offset, ArrayField.Main.Topbar.Position.Y.Scale, ArrayField.Main.Topbar.Position.Y.Offset + 20)
 
 	ArrayField.Main.Topbar.ChangeSize.ImageColor3 = SelectedTheme.TextColor
 	ArrayField.Main.Topbar.Hide.ImageColor3 = SelectedTheme.TextColor
